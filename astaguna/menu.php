@@ -25,39 +25,36 @@ $paketImages = [
 ];
 
 $laukImages = [
-    1 => 'ayam-goreng.jpg',
-    2 => 'ayam-bakar.jpg',
-    3 => 'rendang-daging.jpg',
-    4 => 'empal-goreng.jpg',
-    5 => 'telur-balado.jpg',
-    6 => 'ikan-goreng.jpg',
-    7 => 'sambal-goreng-ati.jpg',
-    8 => 'tempe-goreng.jpg',
-    9 => 'tahu-bacem.jpg',
-    10 => 'opor-ayam.jpg',
+    1 => 'ayamjawa.jpg',
+    2 => 'katsu.jpg',
+    3 => 'bakar.jpg', 
+    4 => 'ayam-goreng.jpg',
+    5 => 'lele.jpg',
+    6 => 'perkedel.jpg',
+    7 => 'Ayam Lodho.jpg',
+    8 => 'balado.jpg'
+    
 ];
 
 $sayurImages = [
-    11 => 'sayur-lodeh.jpg',
-    12 => 'capcay.jpg',
-    13 => 'tumis-kangkung.jpg',
-    14 => 'gado-gado.jpg',
-    15 => 'karedok.jpg',
-];
-
-$nasiImages = [
-    16 => 'nasi-putih.jpg',
-    17 => 'nasi-kuning.jpg',
-    18 => 'nasi-uduk.jpg',
-    19 => 'nasi-liwet.jpg',
+    9 => 'sop.jpg',
+    10 => 'sayur asem.jpg',
+    11 => 'urap.jpg',
+    12 => 'sambal pecel.jpg',
+    13 => 'lalapan.jpg',
+    
 ];
 
 $pendampingImages = [
-    20 => 'kerupuk-udang.jpg',
-    21 => 'sambal-terasi.jpg',
-    22 => 'lalapan.jpg',
-    23 => 'acar-timun.jpg',
-    24 => 'tahu-crispy.jpg',
+    
+    14 => 'krupuk.jpg',
+    15 => 'bacem.jpg',
+    16 => 'tempegoreng.jpg',
+];
+$nasiImages = [
+  17 => 'nasi.jpeg',
+  18 => 'kuning.jpeg',
+  19 => 'uduk.jpeg',
 ];
 
 function getImagePath($itemId, $itemType) {
@@ -76,10 +73,10 @@ function getImagePath($itemId, $itemType) {
             $imageFile = isset($laukImages[$itemId]) ? $laukImages[$itemId] : '';
             $folder = 'img/lauk/';
             break;
-        case 'sayur':
-            $imageFile = isset($sayurImages[$itemId]) ? $sayurImages[$itemId] : '';
-            $folder = 'img/sayur/';
-            break;
+            case 'sayur':
+              $imageFile = isset($sayurImages[$itemId]) ? $sayurImages[$itemId] : '';
+              $folder = 'img/sayur/';
+              break;
         case 'nasi':
             $imageFile = isset($nasiImages[$itemId]) ? $nasiImages[$itemId] : '';
             $folder = 'img/nasi/';
